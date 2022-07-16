@@ -206,29 +206,12 @@ a {
   margin-bottom: 89px;
 }
 
-/* .section3-blocks {
-  display: flex;
-  justify-content: space-between;
-} */
-
 .section3-block {
   background: #f8f8f8;
   border: none;
   border-radius: 10px;
   width: 330px;
   padding: 34px 0;
-  color: #696871;
-}
-
-.section3-block:hover,
-.section3-block:focus, 
-.dark-btn:hover,
-.dark-btn:focus {
-  background: #ff7143;
-  box-shadow: 0px 32px 34px rgba(255, 112, 59, 0.317827);
-  transition: 300ms;
-  color: #ffffff;
-  cursor: pointer;
 }
 
 .section3 h3 {
@@ -237,6 +220,7 @@ a {
   line-height: 28px;
   text-align: center;
   letter-spacing: -0.562737px;
+  color: #696871;
   margin-bottom: 22px;
 }
 
@@ -247,6 +231,7 @@ a {
   text-align: center;
   letter-spacing: -1.03448px;
   margin-bottom: 28px;
+  color: #1D293F;
 }
 
 .section3 p {
@@ -255,6 +240,7 @@ a {
   line-height: 50px;
   text-align: center;
   letter-spacing: -0.531474px;
+  color: #696871;
 }
 
 .dark-btn {
@@ -272,6 +258,34 @@ a {
   color: #5454d4;
   margin-top: 36px;
   margin-left: 22px;
+}
+
+.section3-block:hover,
+.section3-block:focus {
+  background: #ff7143;
+  box-shadow: 0px 32px 34px rgba(255, 112, 59, 0.317827);
+  transition: 300ms;
+  cursor: pointer;
+}
+
+.section3-block:hover h3,
+.section3-block:hover h4,
+.section3-block:hover p,
+.section3-block:hover button,
+.dark-btn:focus,
+.section3-block:focus h3,
+.section3-block:focus h4,
+.section3-block:focus p,
+.section3-block:focus button {
+  color: #ffffff;
+}
+
+.section3-block:hover button,
+.section3-block:focus button,
+.dark-btn:focus {
+  background: #9F3919;
+  border: none;
+  cursor: pointer;
 }
 
 /* Footer */
