@@ -4,13 +4,6 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css"
-      integrity="sha512-NmLkDIU1C/C88wi324HBc+S2kLhi08PN5GDeUVVVC/BVt/9Izdsc9SVeVfA1UZbY3sHUlDSyRXhCzHfr6hmPPw=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -23,118 +16,108 @@
 
   <body>
     <header class="header">
-      <div class="conteiner">
-        <div class="logo">
-          <a href="#"> <img src="./img/Logo.svg" alt="Logo" /> </a>
-        </div>
+      <div class=" wrapper flex-conteiner">
 
-        <nav class="nav">
+      <a class="logo" href="#"> <img src="./img/Logo.svg" alt="Logo" /> </a>
+
+      <nav>
           <ul>
             <li><a href="#">Home</a></li>
             <li><a href="#">Geatures</a></li>
             <li><a href="#">Pricing</a></li>
             <li><a href="#">Blog</a></li>
           </ul>
-        </nav>
+      </nav>
 
-        <div class="header-btn">
+      <div class="header-btn">
           <button class="btn btn-orange" type="button">Get Started</button>
-        </div>
+      </div>
+
       </div>
     </header>
 
     <main class="main">
-      <section class="section1">
-        <div class="conteiner">
-          <div>
-            <h1>Grow your subscription business</h1>
-            <p>
-              Outcome-centered products that reduce churn, optimize pricing, and
-              grow your subscription business end-to-end.
-            </p>
+      
+        <section class="section1 wrapper flex-conteiner">
+
             <div>
-              <button class="btn btn-blue" type="button">Get Started</button>
-              <button class="btn btn-white" type="button">Try</button>
-            </div>
-          </div>
-
-          <div>
-            <img src="./img/Hero.png" alt="Hero Image" />
-          </div>
-        </div>
-      </section>
-
-      <section class="section2">
-        <div class="conteiner">
-          <div>
-            <img src="./img/Content.png" alt="Subscription image" />
-          </div>
-
-          <div>
-            <h2>Subscription index</h2>
-            <div class="section2-form-btn">
-              <form>
-                <p>
-                  <input
-                    class="section2-form"
-                    type="text"
-                    placeholder="Email"
-                  />
-                </p>
-              </form>
-              <button class="btn btn-blue" type="button">Try</button>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section class="section3">
-        <div>
-          <h2>Get the right plan for future</h2>
-          <div class="conteiner">
-
-            <a href="#" class="section3-block">
-              <h3>Starter</h3>
-              <h4 class="">Free</h4>
+              <h1>Grow your subscription business</h1>
+              <p>
+                Outcome-centered products that reduce churn, optimize pricing, and
+                grow your subscription business end-to-end.
+              </p>
               <div>
+                <button class="btn btn-blue" type="button">Get Started</button>
+                <button class="btn btn-white" type="button">Try</button>
+              </div>
+            </div>
+
+            <div>
+              <img src="./img/Hero.png" alt="Hero Image" />
+            </div>
+
+        </section>
+
+        <section class="section2 wrapper flex-conteiner">
+        
+            <div>
+              <img src="./img/Content.png" alt="Subscription image" />
+            </div>
+
+            <div>
+              <h2>Subscription index</h2>
+                <form>
+                    <input class="section2-input" type="email" placeholder="Email"/>
+                    <button class="btn btn-blue" type="button">Try</button>
+                </form>
+            </div>
+
+        </section>
+
+        <section class="section3 wrapper">
+
+            <h2>Get the right plan for future</h2>
+
+            <div class="flex-conteiner">
+
+              <a href="#" class="section3-block">
+                <h3>Starter</h3>
+                <h4>Free</h4>
                 <p>1 Website</p>
                 <p>5 GB Hosting</p>
                 <p>Limited Suppor</p>
-                <button class="btn dark-btn" type="button">Get Started</button>
-              </div>
-            </a>
+                <div class="btn dark-btn" type="button">Get Started</div>
+              </a>
 
-            <a href="#" class="section3-block">
-              <h3>Premium</h3>
-              <h4>$29/month</h4>
-              <div>
+              <a href="#" class="section3-block">
+                <h3>Premium</h3>
+                <h4>$29<span>/month</span></h4>
                 <p>10 Website</p>
                 <p>15 GB Hosting</p>
                 <p>Premium Support</p>
-                <button class="btn dark-btn" type="button">Get Started</button>
-              </div>
-            </a>
+                <div class="btn dark-btn" type="button">Get Started</div>
+              </a>
 
-            <a href="#" class="section3-block">
-              <h3>Enterprise</h3>
-              <h4>$49/month</h4>
-              <div>
+              <a href="#" class="section3-block">
+                <h3>Enterprise</h3>
+                <h4>$49<span>/month</span></h4>
                 <p>Unlimited Website</p>
                 <p>50 GB Hosting</p>
                 <p>Premium Support</p>
-                <button class="btn dark-btn" type="button">Get Started</button>
-              </div>
-            </a>
+                <div class="btn dark-btn" type="button">Get Started</div>
+              </a>
 
-          </div>
-        </div>
-      </section>
+            </div>
+
+        </section>
+
     </main>
 
     <footer class="footer">
-      <div class="conteiner">
+      <div class="wrapper flex-conteiner">
+
         <a href="#"> <img src="./img/Logo.svg" alt="Logo" /> </a>
-        <nav class="nav">
+        <nav>
           <ul>
             <li><a href="#">Support</a></li>
             <li><a href="#">Premium</a></li>
@@ -142,7 +125,10 @@
             <li><a href="#">Blog</a></li>
           </ul>
         </nav>
+
       </div>
     </footer>
+
   </body>
 </html>
+

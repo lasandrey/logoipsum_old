@@ -29,9 +29,17 @@ a {
   text-decoration: none;
 }
 
-.conteiner {
+img {
+  width: 100%;
+  height: 100%;
+}
+
+.wrapper {
   max-width: 1070px;
   margin: 0 auto;
+}
+
+.flex-conteiner { 
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -46,25 +54,24 @@ a {
   flex: 0 0 auto;
 }
 
-.nav li {
+li {
   display: inline-block;
   margin-left: 50px;
 }
 
-.nav li:first-child {
+li:first-child {
   margin-left: 0px;
 }
 
-.nav a {
-  font-weight: 700;
+a {
   font-size: 15px;
   line-height: 20px;
   letter-spacing: -0.468947px;
   color: #696871;
 }
 
-.nav a:hover,
-.nav a:focus {
+a:hover,
+a:focus {
   color: #19191b;
   transition: 300ms;
 }
@@ -76,7 +83,6 @@ a {
   border-radius: 10px;
 
   font-family: inherit;
-  font-weight: 700;
   font-size: 17px;
   line-height: 22px;
   letter-spacing: -0.531474px;
@@ -106,7 +112,6 @@ a {
 }
 
 .section1 h1 {
-  font-weight: 700;
   font-size: 80px;
   line-height: 77px;
   letter-spacing: -2.50105px;
@@ -159,46 +164,41 @@ a {
 }
 
 .section2 h2 {
-  font-weight: 700;
   font-size: 50px;
   line-height: 57px;
   letter-spacing: -1.56316px;
   margin-bottom: 38px;
 }
 
-.section2-form {
+.section2-input {
   width: 302px;
   height: 60px;
   border: 1px solid #7087ff;
   border-radius: 10px;
+
   box-sizing: border-box;
   padding: 19px 14px;
+  margin-right: 39px;
+}
 
-  font-weight: 700;
+.section2-input::placeholder, .section2-input {
   font-size: 17px;
   line-height: 22px;
   letter-spacing: -0.531474px;
   color: #000000;
-  margin-right: 38px;
 }
 
-.section2-form-btn {
-  display: flex;
+.section2-input:focus {
+  outline: none;
 }
 
 /* Section 3 */
 
 .section3 {
-  margin-bottom: 85px;
-}
-
-.section3 > div {
-  max-width: 1070px;
-  margin: 0 auto;
+  margin-bottom: 132px;
 }
 
 .section3 h2 {
-  font-weight: 700;
   font-size: 60px;
   line-height: 70px;
   letter-spacing: -1.87579px;
@@ -208,56 +208,10 @@ a {
 
 .section3-block {
   background: #f8f8f8;
-  border: none;
   border-radius: 10px;
   width: 330px;
-  padding: 34px 0;
-}
-
-.section3 h3 {
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 28px;
+  padding: 34px 0 27px;
   text-align: center;
-  letter-spacing: -0.562737px;
-  color: #696871;
-  margin-bottom: 22px;
-}
-
-.section3 h4 {
-  font-weight: 700;
-  font-size: 60px;
-  line-height: 56px;
-  text-align: center;
-  letter-spacing: -1.03448px;
-  margin-bottom: 28px;
-  color: #1D293F;
-}
-
-.section3 p {
-  font-weight: 400;
-  font-size: 17px;
-  line-height: 50px;
-  text-align: center;
-  letter-spacing: -0.531474px;
-  color: #696871;
-}
-
-.dark-btn {
-  padding: 0 auto;
-  width: 285px;
-  background: #ffffff;
-  border: 1px solid #eae9f2;
-  border-radius: 10px;
-
-  font-weight: 700;
-  font-size: 17px;
-  line-height: 22px;
-  text-align: center;
-  letter-spacing: -0.531474px;
-  color: #5454d4;
-  margin-top: 36px;
-  margin-left: 22px;
 }
 
 .section3-block:hover,
@@ -271,28 +225,64 @@ a {
 .section3-block:hover h3,
 .section3-block:hover h4,
 .section3-block:hover p,
-.section3-block:hover button,
-.dark-btn:focus,
+.section3-block:hover div,
 .section3-block:focus h3,
 .section3-block:focus h4,
 .section3-block:focus p,
-.section3-block:focus button {
+.section3-block:focus div {
   color: #ffffff;
 }
 
-.section3-block:hover button,
-.section3-block:focus button,
-.dark-btn:focus {
+.section3-block:hover div,
+.section3-block:focus div {
   background: #9F3919;
   border: none;
-  cursor: pointer;
+}
+
+.section3 h3 {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 28px;
+  letter-spacing: -0.562737px;
+  color: #696871;
+  margin: 0;
+}
+
+.section3 h4 {
+  font-size: 60px;
+  line-height: 56px;
+  letter-spacing: -1.03448px;
+  margin: 30px 0;
+  color: #1D293F;
+}
+
+.section3 p {
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 50px;
+  letter-spacing: -0.531474px;
+  color: #696871;
+}
+.section3 span {
+  font-size: 28px;
+}
+
+.dark-btn {
+  padding: 20px;
+  margin: 0 auto;
+  margin-top: 36px;
+  height: auto;
+  background: #ffffff;
+  border: 1px solid #eae9f2;
+  border-radius: 10px;
+  color: #5454d4;
 }
 
 /* Footer */
 
 .footer {
   background: rgba(255, 113, 67, 0.27);
-  padding: 53px;
+  padding: 50px;
 
   flex: 0 0 auto;
 }
